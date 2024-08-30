@@ -3,19 +3,31 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #e0f7da; /* Light green background */
+    color: #000000; /* Dark green text */
 }
 
 header {
-    background-color: #4CAF50;
+    position: relative;
+    height: 60vh;
+    background: url('garden-header.jpg') no-repeat center center/cover;
     color: white;
-    padding: 1rem 0;
     text-align: center;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 header h1 {
     margin: 0;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 nav ul {
@@ -25,6 +37,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
+    background-color: #388e3c; /* Medium green background for navigation */
 }
 
 nav ul li {
@@ -35,13 +48,19 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #66bb6a; /* Lighter green on hover */
 }
 
 section {
     padding: 20px;
     margin: 20px auto;
     max-width: 900px;
-    background-color: white;
+    background-color: #f1f8e9; /* Very light green background for sections */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -63,7 +82,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #388e3c; /* Match the navigation bar */
     color: white;
     text-align: center;
     padding: 10px 0;
